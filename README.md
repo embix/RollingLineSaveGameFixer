@@ -2,6 +2,10 @@
 
 try fix corrupted RollingLine save game files by loading them without wagons and then saving them again.
 
+## First Things First
+
+You want to check your quickmod folder for illegal Mod names using http://share.linqpad.net/8pj73o.linq first. If you have an affected mod it will corrupt you game every time you use it and then save. Fixing the mod name is easy, just replace the `,` with a `_` and you should be safe. Also be so kind to inform the mod author about the illegal name so it can be fixed *upstream* for steam workshop and/or rollinglinemodding.com.
+
 ## Build
 
 Before you can build make sure you have a copy of RollingLine. You need to fix the `HintPath  ` for the reference to `Assembly-CSharp`  in the `.csproj`. Usually its something like `C:\Steam\steamapps\common\Rolling Line\RollingLine_Data\Managed\Assembly-CSharp.dll`.
